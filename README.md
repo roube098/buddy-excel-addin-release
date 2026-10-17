@@ -4,7 +4,7 @@ Windows private beta builds of Buddy for Excel are distributed here. This reposi
 
 The SEC beta includes a local HTTPS add-in and its own authenticated SEC service. Install it, start Buddy for Excel Private Beta from the Start menu, enter an application name and real contact email, review the local certificate and Excel registration permission, then choose Start / update service and Open beta in Excel.
 
-In Excel enable + > Plugins > SEC Model Kit. In Settings > Plugins set the server URL to https://localhost:8767/mcp and paste the service key using Copy service key in the launcher. Choose Save and connect. Keep the service running while using Excel. For this local beta, configure a provider API key to chat with the agent. Subscription sign-in requires a hosted authentication backend and is not provided by the local SEC service.
+In Excel enable + > Plugins > SEC Model Kit. In Settings > Plugins set the server URL to https://localhost:8767/mcp and paste the service key using Copy service key in the launcher. Choose Save and connect. Keep the service running while using Excel. Version 0.1.2 supports ChatGPT subscription sign-in through its own local host. In Providers select ChatGPT Subscription > Connect and complete verification on OpenAI's page. Provider API keys remain supported. The older 0.1.1 beta did not implement the subscription login routes.
 
 This is a Windows development sideload for Microsoft Excel desktop, not a Marketplace installation. Organization policy may block development add-ins. The installer is unsigned. Stop service ends the local server; Remove setup or uninstall removes only this beta's certificate trust and matching Excel registration. Configuration and workbooks are kept.
 
